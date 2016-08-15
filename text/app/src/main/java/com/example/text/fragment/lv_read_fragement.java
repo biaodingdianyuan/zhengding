@@ -23,6 +23,8 @@ import org.xutils.x;
 
 import java.util.List;
 
+import static com.example.text.R.id.imageView;
+
 
 public class lv_read_fragement extends Fragment {
 
@@ -94,7 +96,14 @@ public class lv_read_fragement extends Fragment {
             }
         });
 
-
+        View view1=getActivity().getLayoutInflater().inflate(R.layout.lv_read,null);
+        ImageView imagecollect= (ImageView) view1.findViewById(R.id.read_collect);
+        imagecollect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
         return view;
 
     }
